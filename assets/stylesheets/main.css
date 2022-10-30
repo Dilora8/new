@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.nav_bar {
+  width: 100%;
+  height: auto;
+}
+
+.nav_bar nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar nav .logo {
+  margin-left: 100px;
+}
+
+.nav_bar nav .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav_bar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar nav ul li {
+  padding-right: 50px;
+}
+
+.nav_bar nav ul li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #FC6604;
+}
+
+.nav_bar nav ul li a:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0px;
+  height: 3px;
+  background-color: #3c7cd6;
+  transition: 0.3s ease-in-out;
+}
+
+.nav_bar nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav_bar nav .right {
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar nav .right .search {
+  margin: 5px 10px;
+}
+
+.nav_bar nav .right .lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav_bar nav .right .lang .active {
+  margin: 5px;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fc6604;
+}
+
+.nav_bar nav .right .lang .active svg {
+  margin-bottom: 5px;
+}
+
+.cards {
+  width: 230px;
+  height: 300px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #FC6604;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards .img {
+  width: 280px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.cards .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards .text {
+  margin-bottom: 20px;
+}
+
+.cards .btn1 {
+  width: 151px;
+  height: 54px;
+  background: #fc6604;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+#home {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#home .hooper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#home .hooper .action {
+  width: 40%;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 200px;
+}
+
+#home .hooper .action h1 {
+  width: 302px;
+  height: 135px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  color: #fc6604;
+}
+
+#home .hooper .action .anket {
+  width: 230px;
+  height: 54px;
+  background: #fc6604;
+  border-radius: 5px;
+  border: none;
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+#home .hooper .slider1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./../image/slide2.svg") no-repeat;
+  background-size: 100% 100%;
+}
+
+#home .hooper .slider2 {
+  width: 100%;
+  height: 100%;
+  background: url("./../image/slide6.jpg") no-repeat;
+  background-size: cover;
+}
+
+#home .hooper .slider3 {
+  width: 100%;
+  height: 100%;
+  background: url("./../image/slide3.svg") no-repeat;
+  background-size: cover;
+}
+
+#home .hooper .slider4 {
+  width: 100%;
+  height: 100%;
+  background: url("./../image/slide7.jpeg") no-repeat;
+  background-size: cover;
+}
+
+#home #about {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#home #about .left {
+  width: 550px;
+  height: 600px;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  margin-right: 100px;
+}
+
+#home #about .left h1 {
+  padding: 40px;
+}
+
+#home #about .right {
+  width: 550px;
+  height: 600px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+#home #about .right .right_top {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#home #about .right .right_top h1 {
+  padding-right: 20px;
+}
+
+#home #services {
+  max-width: 100%;
+  height: 130vh;
+}
+
+#home #services .title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #fc6604;
+  padding: 30px 200px;
+}
+
+#home #services .cards_top {
+  width: 100%;
+  height: 70vh;
+  margin-left: 40px;
+}
+
+#home #services .cards_top .card_middle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 30px;
+}
+
+#home #contact {
+  width: 100%;
+  height: 100vh;
+  background: rgba(252, 102, 4, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #contact .left {
+  width: 900px;
+  height: 400px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #contact .left .left_input {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#home #contact .left .left_input label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #04319c;
+  padding: 5px;
+}
+
+#home #contact .left .left_input input {
+  width: 375px;
+  height: 32.41px;
+  background: rgba(252, 102, 4, 0.5);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+#home #contact .left .left_input #coment {
+  width: 375px;
+  height: 132.11px;
+  background: rgba(252, 102, 4, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#home #contact .left .left_input .btn {
+  width: 106px;
+  height: 31px;
+  margin: 20px 110px;
+  background: rgba(252, 102, 4, 0.5);
+  border-radius: 5px;
+  border: none;
+}
+
+#home #contact .left .right_contact {
+  width: 50%;
+  padding: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#home #contact .left .right_contact p {
+  padding: 10px;
+}
+
+#home #contact .left .right_contact p svg {
+  padding-top: 10px;
+}
+
+#home footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home footer .contacts {
+  color: #FC6604;
+}
+
+#home footer .contacts p {
+  padding: 10px;
+}
+
+#home footer .contacts p svg {
+  padding-top: 10px;
+}
+
+.main {
+  position: relative;
+}
+
+.main .header {
+  width: 100%;
+  height: 110px;
+}
+/*# sourceMappingURL=main.css.map */

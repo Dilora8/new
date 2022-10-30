@@ -1,0 +1,211 @@
+#home {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  .hooper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .action {
+      width: 40%;
+      height: 500px;
+      position: absolute;
+      z-index: 1;
+      top: 90px;
+      left: 200px;
+      h1 {
+        width: 302px;
+        height: 135px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        color: #fc6604;
+      }
+
+      .anket {
+        width: 230px;
+        height: 54px;
+        background: #fc6604;
+        border-radius: 5px;
+        border: none;
+        margin-top: 100px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+    }
+
+    .slider1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("./../image/slide2.svg") no-repeat;
+      background-size: 100% 100%;
+    }
+    .slider2 {
+      width: 100%;
+      height: 100%;
+      background: url("./../image/slide6.jpg") no-repeat;
+      background-size: cover;
+    }
+    .slider3 {
+      width: 100%;
+      height: 100%;
+      background: url("./../image/slide3.svg") no-repeat;
+      background-size: cover;
+    }
+    .slider4 {
+      width: 100%;
+      height: 100%;
+      background: url("./../image/slide7.jpeg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  #about {
+    max-width: 100%;
+    height: 100vh;
+    @include flexBox(center, center);
+    margin: 50px;
+
+    .left {
+      width: 550px;
+      height: 600px;
+      padding: 50px;
+      background: #ffffff;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+      margin-right: 100px;
+      h1 {
+        padding: 40px;
+      }
+    }
+
+    .right {
+      width: 550px;
+      height: 600px;
+      padding: 40px;
+      background: #ffffff;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+      .right_top {
+        padding: 30px;
+        @include flexBox(flex-start, center);
+        h1 {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  #services {
+    max-width: 100%;
+    height: 130vh;
+
+    .title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.05em;
+      color: #fc6604;
+      padding: 30px 200px;
+    }
+
+    .cards_top {
+      width: 100%;
+      height: 70vh;
+      margin-left: 40px;
+      .card_middle{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-row-gap: 30px;
+
+      }
+
+    }
+
+  }
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background: rgba(252, 102, 4, 0.5);
+    @include flexBox(center, center);
+
+    .left {
+      width: 900px;
+      height: 400px;
+      background-color: $primary_color;
+      @include flexBox(center, center);
+
+      .left_input {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+          color: #04319c;
+          padding: 5px;
+        }
+
+        input {
+          width: 375px;
+          height: 32.41px;
+          background: rgba(252, 102, 4, 0.5);
+          border-radius: 5px;
+          border: none;
+          padding: 5px;
+        }
+
+        #coment {
+          width: 375px;
+          height: 132.11px;
+          background: rgba(252, 102, 4, 0.5);
+          border-radius: 5px;
+          padding: 5px;
+        }
+
+        .btn {
+          width: 106px;
+          height: 31px;
+          margin: 20px 110px;
+          background: rgba(252, 102, 4, 0.5);
+          border-radius: 5px;
+          border: none;
+        }
+      }
+
+      .right_contact {
+        width: 50%;
+        padding: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          padding: 10px;
+          svg {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include flexBox(space-between, center);
+
+    .contacts {
+      color: $accent_color;
+
+      p {
+        padding: 10px;
+        svg {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
